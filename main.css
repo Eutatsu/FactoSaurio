@@ -1,3 +1,26 @@
 body {
     text-align: center;
 }
+
+.p5js {
+    display: inline-flex;
+    height: 200px;
+    width:80%;
+    background-color:gray;
+    
+}
+
+.p5js .eu {
+    width:50%;
+    background-color:darkgray;
+
+}
+.p5js .dav {
+    width:50%;
+    background-color:gray;
+
+}
+
+.p5canvas {
+    width: 50%
+}
