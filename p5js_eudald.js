@@ -1,4 +1,6 @@
-//Eudald Cardozo Vallhonrat 54580233Z
+
+new p5(function(){
+  //Eudald Cardozo Vallhonrat 54580233Z
 
 //El valor d'aquestes dues primeres variables es pot canviar per experimentar amb l'aparença de l'obra, un major spacing mostrarà mes espai entre figures d'un mateix passadis, una major speed farà que tot es dibuixi mes rapid, i amb el weight podem variar el gruix de les figures, fent que apareixi mes o menys plè
 //Spacings inferiors a 2 amb una pantalla de gran tamany poden causar lag
@@ -19,12 +21,12 @@ let y;
 let a = 0;
 let e = 0;
 let pd = 23;
-let p5eudald 
 
-function setup() {
+setup = function() {
   //Fem que el llenç s'ajusti automaticament a la mida de la pantalla, per a que aixo sigui funcional haurem de fer totes les mesures proporcionals a la mida del canvas
-  p5eudald = createCanvas(windowWidth, windowHeight);
-  p5eudald.parent ('eu');
+  createCanvas(400, 400).parent ('eu');
+  
+
   //Generarem una llavor aleatoria que utilitzarem per a la resta de nombres aleatoris del programa, la hem de generar al setup ja que d'altra manera es generaria continuament una de nova i les figures es mourien de forma erratica.
   //La funció floor arrodoneix el nombre i el fa enter.
   seed = round(random(10000));
@@ -39,11 +41,6 @@ function setup() {
   angleMode(DEGREES);
   //Canviem el mode de color a Hue Saturation Brightness, aixo farà que amb un sol paràmetre poguem canviar la coloració, permetentnos tenir colors vde la mateixa intensitat
   colorMode(HSB);
-}
-
-function windowResized() {
-  //Amb aquesta simple funció incorporada farem que el llenç s'ajusti en temps real si es canvia la mida de la finestra
-  resizeCanvas(windowWidth, windowHeight);
 }
 
 //Recuperem la funció d'hexagon de la anterior exercici, amb alguns valors girats de manera que estigui orientat amb un vertex a dalt i un a baix, en comptes de als costats.
@@ -238,7 +235,7 @@ function state3() {
 }
 
 //Tenim varies funcionalitats que s'han d'activar quan fem clic a la pantalla, les posem dins una funció mouseClciked
-function mouseClicked() {
+mouseClicked = function() {
   //la primera es el canvi de l'estat del bloqueig, detectem si el cursor es troba sobre el botó de bloqueig i si l'estat actual es bloquejat o desbloquejat
   if (
     lock == false &&
@@ -342,7 +339,7 @@ function marc() {
 }
 
 //finalment, ajuntem totes les funcions a la funció draw
-function draw() {
+draw = function() {
   //primer de tot apliquem la llavor aleatoria que hem generat al setup i que es genera de nou cada vegada que pasem del estat 2 al 0
   randomSeed(seed);
   //a cada repetició del codi incrementem el valor de "a" per el factor speed definit al inici, permetent que es reproduexi l'animació del les figures
@@ -365,4 +362,5 @@ function draw() {
 
   //per últim carreguem el marc per sobre de tot
   marc();
-}
+};
+});
