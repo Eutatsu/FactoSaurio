@@ -6,7 +6,7 @@ body {
     display: inline-flex;
     width:80%;
     background-color:gray;
-    
+    margin:auto
 }
 
 .p5Canvas{

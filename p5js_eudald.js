@@ -1,5 +1,5 @@
 
-new p5(function(){
+
   //Eudald Cardozo Vallhonrat 54580233Z
 
 //El valor d'aquestes dues primeres variables es pot canviar per experimentar amb l'aparença de l'obra, un major spacing mostrarà mes espai entre figures d'un mateix passadis, una major speed farà que tot es dibuixi mes rapid, i amb el weight podem variar el gruix de les figures, fent que apareixi mes o menys plè
@@ -363,4 +363,3 @@ draw = function() {
   //per últim carreguem el marc per sobre de tot
   marc();
 };
-});
