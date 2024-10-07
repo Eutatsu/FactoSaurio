@@ -5,17 +5,27 @@ body {
     margin: 0px
 }
 
+header{
+    background-color: rgb(48, 136, 48); 
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ ul{
+    display: inline-flex
+ }
+
+ li{
+    margin: 20px
+ }
+
 .p5js {
     display: inline-flex;
     width:80%;
     background-color:rgb(48, 136, 48);
     margin:auto
-}
-
-h1{
-   background-color: rgb(48, 136, 48); 
-   padding: 20px;
-   margin-top: 0px
 }
 
 .p5Canvas{
