@@ -1,13 +1,14 @@
 body {
-    background-color: rgb(120, 187, 120);
+    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     display: inline-flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 header{
-    background-color: rgb(48, 136, 48); 
+    background-color:   darkgreen;
     width: 100%;
     display: inline-flex;
     align-items: center;
@@ -15,15 +16,33 @@ header{
     color:rgb(162, 255, 188);
  }
 
-main{ 
-    width: 70%;
-    margin-left: 10%;
+#historia p{
+    column-count: 3;
 }
+
+#cos{
+    margin: 0px auto;
+    justify-content: center;
+    display:flex
+}
+
+main{ 
+    width: 50%;
+    padding: 1%;
+    padding-left: 3%;
+    background-color: rgb(120, 187, 120);
+}
+
 
 aside{
-    width: 20%;
+    background-color: rgb(48, 136, 48); 
+    width:20%;
+    padding:1%
 }
 
+aside h2{
+    margin: auto 10px
+}
  ul{
     display: inline-flex
  }
@@ -40,7 +59,7 @@ aside{
 
 .p5js {
     display: inline-flex;
-    width:80%;
+    width:100%;
     background-color:rgb(48, 136, 48);
     margin:auto
 }
