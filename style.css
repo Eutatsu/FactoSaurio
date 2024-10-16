@@ -1,0 +1,21 @@
+nav{
+    background-color:   darkgreen;
+}
+
+nav h1, nav a{
+    color:rgb(162, 255, 188);
+}
+
+
+
+main {
+    background-color: rgb(120, 187, 120);
+}
+
+aside {
+    background-color: rgb(48, 136, 48); 
+}
+
+main p{
+    column-count: 3;
+}
