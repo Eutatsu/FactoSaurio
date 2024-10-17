@@ -6,16 +6,33 @@ nav h1, nav a{
     color:rgb(162, 255, 188);
 }
 
+h1{
+    font-weight: bold;
+}
 
+h2 {
+    font-weight: bold;
+}
 
 main {
-    background-color: rgb(120, 187, 120);
+    background-color: rgb(116, 221, 116);
 }
 
 aside {
     background-color: rgb(48, 136, 48); 
 }
 
+aside h2{
+    color:white;
+    text-align: center;
+}
+
 main p{
     column-count: 3;
+}
+
+
+section .subsection{
+    background-color: rgb(48, 136, 48); 
+    color:rgb(162, 255, 188);
 }

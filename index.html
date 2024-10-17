@@ -18,15 +18,15 @@
 
 
     <body>
-        
     <nav class="navbar navbar-expand-md navbar-dark" aria-label="MainNav">
         <div class="col-1"></div>
         <div class="container-fluid">
+          
+          <a class="navbar-brand col-md-3" href="#"><h1>FactoSaurio</h1></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand col-lg-3" href="#"><h1>FactoSaurio</h1></a>
-          <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+          <div class="collapse navbar-collapse" id="navbarsExample11">
             
             <ul class="navbar-nav col-lg-6 justify-content-lg-center">
                 <li class="nav-item">
@@ -53,10 +53,12 @@
           </div>
         </div>
       </nav>
-    
-      <div class="container">
+      
+
+      <div class="container vw-90">
+        <a href="#" class="sticky-top " data-bs-target="#manual" data-bs-toggle="collapse" >Manual</a>
       <div class="row">
-      <main class="col-8 p-4">
+      <main class="col p-4" >
         <article id="historia">
         <h2>Pre-Història dels dinosaures</h2>
         <section>
@@ -75,9 +77,13 @@
         <hr>
         <section id="classificacio">
             <h2>Classificació</h2>
-                <h3>Apareixen a Jurassic Park</h3>
-                <h3>Apareixen a Dinotren</h3>
+            <div class="col-12 p-2 my-1 subsection">
+                <h3>Apareixen a Jurassic Park</h3></div>
+                <div class="col-12 p-2 my-1 subsection">
+                <h3>Apareixen a Dinotren</h3></div>
+                <div class="col-12 p-2 my-1 subsection">
                 <h3>Hi han Pokémon basats en ells</h3>
+            </div>
         </section> 
         <hr>
         <section id="descobriments">
@@ -99,7 +105,7 @@
         </section>
         <hr>
         <section>
-            <h2>Curiositats</h2>
+            <h2 id="descobriments">Curiositats</h2>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit inventore!.</p>
         </section>
@@ -122,9 +128,11 @@
 <div class="col-6" id="dav"><h3>David</h3>
     <h4>Exercici 2</h4></div></div>
 </section>
+
+
          </main>
         
-    <aside class="col-4 p-4">
+    <aside id="manual" class="col-4 p-4 collapse collapse-horizontal  border-end">
         <h2>Gran Manual per Identificar Dinosaures</h2>
     </aside>
     
