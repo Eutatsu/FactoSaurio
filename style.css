@@ -36,3 +36,7 @@ section .subsection{
     background-color: rgb(48, 136, 48); 
     color:rgb(162, 255, 188);
 }
+
+section #descobriments{
+    display:flex
+}
