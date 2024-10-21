@@ -2,6 +2,11 @@ nav{
     background-color:   darkgreen;
 }
 
+#brand{
+    display: flex;
+    align-items: center;
+}
+
 nav h1, nav a{
     color:rgb(162, 255, 188);
 }
@@ -18,7 +23,7 @@ main {
     background-color: rgb(116, 221, 116);
 }
 
-aside {
+aside, #descobriments article{
     background-color: rgb(48, 136, 48); 
 }
 
@@ -27,7 +32,7 @@ aside h2{
     text-align: center;
 }
 
-main p{
+#historia p{
     column-count: 3;
 }
 
@@ -37,6 +42,10 @@ section .subsection{
     color:rgb(162, 255, 188);
 }
 
-section #descobriments{
-    display:flex
+
+
+
+
+ #articlepsace {
+    color:white;
 }
