@@ -26,6 +26,10 @@ header{
     display:flex
 }
 
+section .subsection{
+    background-color: rgb(48, 136, 48); 
+}
+
 main{ 
     width: 50%;
     padding: 1%;

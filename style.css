@@ -1,0 +1,51 @@
+nav{
+    background-color:   darkgreen;
+}
+
+#brand{
+    display: flex;
+    align-items: center;
+}
+
+nav h1, nav a{
+    color:rgb(162, 255, 188);
+}
+
+h1{
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+main {
+    background-color: rgb(116, 221, 116);
+}
+
+aside, #descobriments article{
+    background-color: rgb(48, 136, 48); 
+}
+
+aside h2{
+    color:white;
+    text-align: center;
+}
+
+#historia p{
+    column-count: 3;
+}
+
+
+section .subsection{
+    background-color: rgb(48, 136, 48); 
+    color:rgb(162, 255, 188);
+}
+
+
+
+
+
+ #articlepsace {
+    color:white;
+}
