@@ -23,6 +23,19 @@ main {
     background-color: rgb(116, 221, 116);
 }
 
+.logo{
+    width: 5em;
+    height: 5em;
+}
+
+.fotos_historia{
+    width: 100%; 
+    height: auto;
+    max-width: 20em;
+    max-height: 15em; 
+    object-fit: cover;
+}
+
 aside{
     position: fixed;
     right: 0px;
