@@ -23,6 +23,12 @@ main {
     background-color: rgb(116, 221, 116);
 }
 
+aside{
+    position: fixed;
+    right: 0px;
+    height: 100vh
+}
+
 aside, #descobriments article{
     background-color: rgb(48, 136, 48); 
 }
@@ -42,7 +48,12 @@ section .subsection{
     color:rgb(162, 255, 188);
 }
 
-
+.fixed-top-btn {
+    position: fixed; /* Make the button fixed in the viewport */
+    bottom: 20px;    /* Distance from the bottom of the viewport */
+    right: 20px;     /* Distance from the right of the viewport */
+    z-index: 9999;   /* Ensure it stays on top of other elements */
+}
 
 
 
