@@ -1,15 +1,23 @@
 nav{
-    background-color:   darkgreen;
+    background-color: darkgreen;
 }
 
-#brand{
-    display: flex;
-    align-items: center;
+.navbar-nav a{
+    color:white;
+    font-size: 1.2em;
 }
 
-nav h1, nav a{
+.navbar-nav a:hover{
+    color:white;
+    font-size: 1.2em;
+    background-color: rgb(6, 71, 6);
+}
+
+nav h1{
     color:rgb(162, 255, 188);
 }
+
+
 
 h1{
     font-weight: bold;
@@ -24,10 +32,13 @@ main {
 }
 
 aside{
-    position: fixed;
     right: 0px;
-    height: 100vh
 }
+
+@media (max-width: 991.98px) { /* Targets screens smaller than lg */
+    aside{
+        top:0px;
+            position: fixed;}}
 
 aside, #descobriments article{
     background-color: rgb(48, 136, 48); 
@@ -42,6 +53,18 @@ aside h2{
     column-count: 3;
 }
 
+@media (max-width: 992px){
+    #historia p{
+        column-count: 2;
+    }
+}
+
+
+@media (max-width: 576px){
+    #historia p{
+        column-count: 1;
+    }
+}
 
 section .subsection{
     background-color: rgb(48, 136, 48); 
