@@ -1,3 +1,15 @@
+*{
+    box-sizing:border-box;
+  }
+  
+ body {
+    background-image: url("imatges/fons.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto 100%;
+    background-position: center bottom;
+  }
+
 nav{
     background-color: darkgreen;
 }
@@ -13,7 +25,7 @@ nav{
     background-color: rgb(6, 71, 6);
 }
 
-nav h1{
+nav h1, aside h3{
     color:rgb(162, 255, 188);
 }
 
@@ -59,13 +71,21 @@ aside, #descobriments article{
     background-color: rgb(48, 136, 48); 
 }
 
+aside p{
+    color:white;
+    text-align: justify;
+}
+
 aside h2{
     color:white;
     text-align: center;
 }
 
+
+
 #historia p{
     column-count: 3;
+    text-align: justify;
 }
 
 @media (max-width: 992px){
