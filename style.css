@@ -2,43 +2,28 @@
     box-sizing:border-box;
   }
   
+ p{
+    font-size: 1em;
+ } 
  body {
     background-image: url("imatges/fons.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% auto;
+    background-size: cover;
     background-position: center bottom;
   }
 
-@media (max-width:1200px) {
-    body {
-        background-size: auto 100%;
-      }
-}
-  
 
-nav{
-    background-color: darkgreen;
-}
 
 .navbar-nav a{
-    color:white;
     font-size: 1.2em;
 }
 
 .navbar-nav a:hover{
     color:white;
     font-size: 1.2em;
-    background-color: rgb(6, 71, 6);
 }
 
-nav h1, aside h3{
-    color:rgb(162, 255, 188);
-}
-
-.navbar .dropdown-item{
-    color:darkgreen;
-}
 
 
 
@@ -48,11 +33,9 @@ h1{
 
 h2 {
     font-weight: bold;
+    color:#783c35
 }
 
-main {
-    background-color: rgb(116, 221, 116);
-}
 
 .logo{
     width: 100%;
@@ -69,8 +52,24 @@ main {
     object-fit: cover;
 }
 
+#manbutn{
+    text-align: center;
+    width:5rem;
+    height: 5rem;
+    font-weight: bold;
+    justify-content: center;
+}
+
+#manbutn i{
+    font-size:2rem
+}
+
 aside{
     right: 0px;
+}
+
+aside .show{
+    width:250px;
 }
 
 @media (max-width: 992px) { /* Targets screens smaller than lg */
@@ -80,25 +79,19 @@ aside{
     }
         }
 
-aside, #descobriments article{
-    background-color: rgb(48, 136, 48); 
-}
 
-aside p{
-    color:white;
-    text-align: justify;
-}
 
 aside h2{
-    color:white;
     text-align: center;
 }
 
+aside h3{
+    font-weight: bold;
+}
 
 
 #historia p{
     column-count: 3;
-    text-align: justify;
 }
 
 @media (max-width: 992px){
@@ -114,9 +107,10 @@ aside h2{
     }
 }
 
-section .subsection{
-    background-color: rgb(48, 136, 48); 
-    color:rgb(162, 255, 188);
+
+section .subsection h3{
+    
+    font-weight: bold;
 }
 
 .fixed-top-btn {
@@ -128,6 +122,8 @@ section .subsection{
 
 
 
- #articlepsace {
-    color:white;
+
+footer{
+
+    text-align: center;
 }
