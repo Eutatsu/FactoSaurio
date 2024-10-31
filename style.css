@@ -65,6 +65,28 @@ main {
     object-fit: cover;
 }
 
+.carousel-item{
+    width: 100%;
+    height: 100%;
+    max-width: 20em;
+    max-height: 18em;
+}
+
+.fotos_noticia{
+    width: 100%;
+    height: auto;
+    max-width: 25em;
+    max-height: 25em;
+    object-fit: cover;
+}
+
+.fotos_curiositats{
+    width: 100%;
+    height: 100%;
+    max-width: 15em;
+    max-height: 10em;
+}
+
 aside{
     right: 0px;
 }
