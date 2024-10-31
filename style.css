@@ -36,6 +36,10 @@ nav h1, aside h3{
     color:rgb(162, 255, 188);
 }
 
+.navbar .dropdown-item{
+    color:darkgreen;
+}
+
 
 
 h1{
