@@ -1,0 +1,167 @@
+*{
+    box-sizing:border-box;
+  }
+  
+ p{
+    font-size: 1em;
+ } 
+ body {
+    background-image: url("../imatges/fons.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center bottom;
+  }
+
+
+
+.navbar-nav a{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.navbar-nav a:hover{
+    color:white;
+    font-size: 1.2em;
+}
+
+
+
+
+h1{
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+    color:#783c35
+}
+
+
+.logo{
+    width: 100%;
+    height: 100%;
+    max-width: 5em;
+    max-height: 5em;
+}
+
+.fotos_historia{
+    width: 100%; 
+    height: auto;
+    max-width: 26em;
+    max-height: 16em; 
+    object-fit: cover;
+}
+
+#manbutn{
+    text-align: center;
+    width:5rem;
+    height: 5rem;
+    font-weight: bold;
+    justify-content: center;
+}
+
+#manbutn i{
+    font-size:2rem}
+    
+.carousel-item{
+    height: 200px;
+}
+
+.carousel-item img {
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.fotos_noticia{
+    width: 100%;
+    height: auto;
+    max-width: 25em;
+    max-height: 25em;
+    object-fit: cover;
+}
+
+#articlespace article{
+    height:100%
+}
+
+#articlespace article h4{
+    font-weight: bold;
+}
+
+.fotos_curiositats{
+    width: 100%;
+    height: 100%;
+    max-width: 15em;
+    max-height: 10em;
+}
+
+aside{
+    right: 0px;
+}
+
+aside .show{
+    width:250px;
+}
+
+@media (max-width: 992px) { /* Targets screens smaller than lg */
+    aside{
+        top:0px;
+        position:absolute;
+    }
+        }
+
+
+
+aside h2{
+    text-align: center;
+}
+
+aside h3{
+    font-weight: bold;
+}
+
+
+#historia p{
+    column-count: 3;
+}
+
+@media (max-width: 992px){
+    #historia p{
+        column-count: 2;
+    }
+}
+
+
+@media (max-width: 576px){
+    #historia p{
+        column-count: 1;
+    }
+}
+
+
+section .subsection h3{
+    
+    font-weight: bold;
+}
+
+.fixed-top-btn {
+    position: fixed; 
+    bottom: 20px;    
+    right: 20px;     
+    z-index: 9999;   
+}
+
+
+
+
+footer{
+
+    text-align: center;
+}
+
+img.lego{
+    float: left;
+    shape-outside: ellipse(); 
+}
