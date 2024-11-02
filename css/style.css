@@ -18,6 +18,9 @@ p {
     font-size: 1em;
 }
 
+h3{
+    font-weight: bold;
+}
 /*------------------------------
     Navegació (navbar)
 ------------------------------*/
@@ -29,6 +32,7 @@ p {
 
 .navbar-nav a:hover {
     color: white;
+    background-color: #02320a;
     font-size: 1.2em;
 }
 
@@ -151,8 +155,6 @@ img.lego {
     font-weight: bold;
 }
 
-#articlespace article a{
-}
 
 
 
