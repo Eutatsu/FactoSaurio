@@ -24,7 +24,8 @@ let pd = 23;
 
 setup = function() {
   //Fem que el llenç s'ajusti automaticament a la mida de la pantalla, per a que aixo sigui funcional haurem de fer totes les mesures proporcionals a la mida del canvas
-  createCanvas(400, 400).parent ('eu');
+  const container = document.getElementById('eu');
+  createCanvas(0.95*container.clientWidth, 400).parent ('eu');
   
 
   //Generarem una llavor aleatoria que utilitzarem per a la resta de nombres aleatoris del programa, la hem de generar al setup ja que d'altra manera es generaria continuament una de nova i les figures es mourien de forma erratica.
@@ -41,6 +42,11 @@ setup = function() {
   angleMode(DEGREES);
   //Canviem el mode de color a Hue Saturation Brightness, aixo farà que amb un sol paràmetre poguem canviar la coloració, permetentnos tenir colors vde la mateixa intensitat
   colorMode(HSB);
+}
+
+windowResized = function() {
+  const container = document.getElementById('eu');
+  resizeCanvas(0.95*container.clientWidth, 400);
 }
 
 //Recuperem la funció d'hexagon de la anterior exercici, amb alguns valors girats de manera que estigui orientat amb un vertex a dalt i un a baix, en comptes de als costats.

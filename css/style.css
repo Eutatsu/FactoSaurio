@@ -126,9 +126,46 @@ img.lego {
 }
 
 /*------------------------------
+    Carrusel d'Imatges
+------------------------------*/
+
+.carousel-item {
+    height: 200px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*------------------------------
+    Espai d'Articles 
+------------------------------*/
+
+#articlespace article {
+    height: 100%;
+}
+
+#articlespace article h3{
+    font-weight: bold;
+}
+
+#articlespace article a{
+}
+
+
+
+/*------------------------------
     Manual (Botó d'Accés i Aside)
 ------------------------------*/
 
+.fixed-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
 #manbutn {
     text-align: center;
     width: 5rem;
@@ -171,45 +208,6 @@ aside h2 {
     text-align: center;
 }
 
-/*------------------------------
-    Carrusel d'Imatges
-------------------------------*/
-
-.carousel-item {
-    height: 200px;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-/*------------------------------
-    Espai d'Articles 
-------------------------------*/
-
-#articlespace article {
-    height: 100%;
-}
-
-#articlespace article h3{
-    font-weight: bold;
-}
-
-#articlespace article a{
-}
-
-/*------------------------------
-    Botó Flotant
-------------------------------*/
-
-.fixed-top-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-}
 
 /*------------------------------
     Peu de Pàgina (Footer)
