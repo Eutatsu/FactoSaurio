@@ -1,167 +1,192 @@
-*{
-    box-sizing:border-box;
-  }
-  
- p{
-    font-size: 1em;
- } 
- body {
+/*------------------------------
+    General CSS Global
+------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
     background-image: url("../imatges/fons.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center bottom;
-  }
+}
 
+p {
+    font-size: 1em;
+}
 
+/*------------------------------
+    Navegació (navbar)
+------------------------------*/
 
-.navbar-nav a{
+.navbar-nav a {
     font-size: 1.2em;
     font-weight: bold;
 }
 
-.navbar-nav a:hover{
-    color:white;
+.navbar-nav a:hover {
+    color: white;
     font-size: 1.2em;
 }
 
+/*------------------------------
+    Titulars i Encapçalaments
+------------------------------*/
 
-
-
-h1{
+h1 {
     font-weight: bold;
 }
 
 h2 {
     font-weight: bold;
-    color:#783c35
+    color: #783c35;
 }
 
+section .subsection h3,
+aside h3 {
+    font-weight: bold;
+}
 
-.logo{
+/*------------------------------
+    Imatges Generals
+------------------------------*/
+
+.logo {
     width: 100%;
     height: 100%;
     max-width: 5em;
     max-height: 5em;
 }
 
-.fotos_historia{
-    width: 100%; 
-    height: auto;
-    max-width: 26em;
-    max-height: 16em; 
-    object-fit: cover;
-}
-
-#manbutn{
-    text-align: center;
-    width:5rem;
-    height: 5rem;
-    font-weight: bold;
-    justify-content: center;
-}
-
-#manbutn i{
-    font-size:2rem}
-    
-.carousel-item{
-    height: 200px;
-}
-
-.carousel-item img {
-    width:100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.fotos_noticia{
+.fotos_historia,
+.fotos_noticia,
+.fotos_curiositats {
     width: 100%;
     height: auto;
+}
+
+.fotos_historia {
+    max-width: 26em;
+    max-height: 16em;
+    object-fit: cover;
+}
+
+.fotos_noticia {
     max-width: 25em;
     max-height: 25em;
     object-fit: cover;
 }
 
-#articlespace article{
-    height:100%
-}
-
-#articlespace article h4{
-    font-weight: bold;
-}
-
-.fotos_curiositats{
-    width: 100%;
-    height: 100%;
+.fotos_curiositats {
     max-width: 15em;
     max-height: 10em;
 }
 
-aside{
-    right: 0px;
-}
-
-aside .show{
-    width:250px;
-}
-
-@media (max-width: 992px) { /* Targets screens smaller than lg */
-    aside{
-        top:0px;
-        position:absolute;
-    }
-        }
-
-
-
-aside h2{
-    text-align: center;
-}
-
-aside h3{
-    font-weight: bold;
+img.lego {
+    float: left;
+    shape-outside: ellipse();
 }
 
 
-#historia p{
+/*------------------------------
+    Història (Secció)
+------------------------------*/
+
+#historia p {
     column-count: 3;
 }
 
-@media (max-width: 992px){
-    #historia p{
+@media (max-width: 992px) {
+    #historia p {
         column-count: 2;
     }
 }
 
-
-@media (max-width: 576px){
-    #historia p{
+@media (max-width: 576px) {
+    #historia p {
         column-count: 1;
     }
 }
 
+/*------------------------------
+    Manual (Botó d'Accés i Aside)
+------------------------------*/
 
-section .subsection h3{
-    
+#manbutn {
+    text-align: center;
+    width: 5rem;
+    height: 5rem;
     font-weight: bold;
+    justify-content: center;
 }
 
-.fixed-top-btn {
-    position: fixed; 
-    bottom: 20px;    
-    right: 20px;     
-    z-index: 9999;   
+#manbutn i {
+    font-size: 2rem;
 }
 
+aside {
+    right: 0px;
+}
 
+aside .show {
+    width: 250px;
+}
 
+@media (max-width: 992px) { /* Targeta pantalles més petites que lg */
+    aside {
+        top: 0px;
+        position: absolute;
+    }
+}
 
-footer{
-
+aside h2 {
     text-align: center;
 }
 
-img.lego{
-    float: left;
-    shape-outside: ellipse(); 
+/*------------------------------
+    Carrusel d'Imatges
+------------------------------*/
+
+.carousel-item {
+    height: 200px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*------------------------------
+    Espai d'Articles 
+------------------------------*/
+
+#articlespace article {
+    height: 100%;
+}
+
+#articlespace article h4 {
+    font-weight: bold;
+}
+
+/*------------------------------
+    Botó Flotant
+------------------------------*/
+
+.fixed-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+/*------------------------------
+    Peu de Pàgina (Footer)
+------------------------------*/
+
+footer {
+    text-align: center;
 }

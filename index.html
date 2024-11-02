@@ -23,128 +23,110 @@
 
 
     <body>
-      <nav class="navbar navbar-expand-md navbar-dark bgc-verd-3" aria-label="MainNav">
-        <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark bgc-verd-3" aria-label="Main navigation">
+          <div class="container-fluid">
             <div class="d-flex justify-content-md-center align-items-center flex-grow-1">
-                <a id="brand" class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="imatges/logo_curiosaurio.png" style="width: 4em; height: 4em;" alt="Logo">
-                    <h1 class="ms-2 mb-0">FactoSaurio</h1>
-                </a>
+              <a id="brand" class="navbar-brand d-flex align-items-center" href="#" aria-label="FactoSaurio Homepage">
+                <img src="imatges/logo_curiosaurio.png" style="width: 4em; height: 4em;" alt="FactoSaurio logo">
+                <h1 class="ms-2 mb-0">FactoSaurio</h1>
+              </a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarsExample11">
-                <ul class="navbar-nav ">
-                    <li class="nav-item">
-                        <a class="px-lg-3 nav-link txc-groc-1" href="./index.html#historia">Historia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="px-lg-3 nav-link txc-groc-1" href="./index.html#classificacio">Classificació</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="px-lg-3 nav-link txc-groc-1" href="./index.html#descobriments">Descobriments</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="px-lg-3 nav-link txc-groc-1" href="./index.html#curiositats">Curiositats</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle txc-groc-1" href="#" data-bs-toggle="dropdown" aria-expanded="false">Extres</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./index.html#eu">P5js</a></li>
-                            <li><a class="dropdown-item" href="./index.html#netart">Net Art</a></li>
-                        </ul>
-                    </li>
-                </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="px-lg-3 nav-link txc-groc-1" href="./index.html#historia" aria-label="Link to Historia section">Historia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="px-lg-3 nav-link txc-groc-1" href="./index.html#classificacio" aria-label="Link to Classificació section">Classificació</a>
+                </li>
+                <li class="nav-item">
+                  <a class="px-lg-3 nav-link txc-groc-1" href="./index.html#descobriments" aria-label="Link to Descobriments section">Descobriments</a>
+                </li>
+                <li class="nav-item">
+                  <a class="px-lg-3 nav-link txc-groc-1" href="./index.html#curiositats" aria-label="Link to Curiositats section">Curiositats</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle txc-groc-1" href="#" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Extras menu">Extres</a>
+                  <ul class="dropdown-menu" aria-label="Extras submenu">
+                    <li><a class="dropdown-item" href="./index.html#eu" aria-label="P5js section">P5js</a></li>
+                    <li><a class="dropdown-item" href="./index.html#netart" aria-label="Net Art section">Net Art</a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-        </div>
-    </nav>
-    
-  
-    
-      <div class="container vw-90">
-        <button id="manbutn" class="btn fixed-top-btn d-lg-none rounded-circle bgc-verd-3 txc-groc-1" data-bs-target="#manual" data-bs-toggle="collapse" ><i class="fa-solid fa-book-bookmark"></i>Manual</button>
-    
-      <div class="row">
-      <main class="col p-4 bgc-verd-0" >
-        <article id="historia">
-        <h2>Pre-Història dels dinosaures</h2>
-        <section>
-          <h3>Paleozoic</h3>
-          <p>Amb una duració de <strong>290 milions d'anys</strong> (fa 541 milions d'anys enrere fins fa 252 milions d'anys), aquesta era comença amb la <strong>desintegració del supercontinent Pannotia</strong> i acaba amb la <strong>formació de Pangea.</strong><br>
-          En aquest període sorgeixen els <strong>invertebrats amb closca i exoesquelet</strong>, així com l'inici del regnat dels grans rèptils, els que mesuraven més de dues rentadores apilades una sobre de l'altra. <br>
-          Pangea va ser el terreny de joc durant milers d'anys on tots els èssers vius convivien en harmonía sense necessitats de fronteres ni nacions. Tant va ser la pau durant aquest període, que molts fanàtics del supercontintent segueixen a dia d'avui difundint propaganda amb el lema de <strong>"Boicot al euro, que vuelva Pangea".</strong><br>
-          A l'igual que als altres períodes, molts dels animals que van aparèixer durant el Paleozoic es van acabar extingint abans de que comencés el següent. Això implica que dinosaures com l'<em>estegosaure</em> i el <em>tiranosaure</em> no van conviure junts, per molt que alguns medis ho retratessin com a tal.<br> 
-          Durant aquest temps, apareixen criatures com els <em>trilobites</em>, el <em>dimetrodon</em>, el <em>mesosaurus</em> i el rei <em>Joan Carles</em>.<br>
-          <img class="fotos_historia" src="imatges/dimetrodon.jpg">
-          </p>
-        </section>
-        <section>
-          <h3>Mesozoic</h3>
-                    <p>Aquesta era va començar fa <strong>251 milions d'anys</strong> i va acabar 66 milions d'anys enrere. Aquesta època va estar dominada pels <strong>grans rèptils</strong>, al mateix temps que apareixien els primers mamífers i les primeres aus, igual que les primeres plantes amb flors.<br>
-                    Algunes de les criatures més característiques d'aquesta era són el <em>diplodocus</em>, l'<em>estegosaure</em>, el <em>triceratops</em>, l'<em>espinosaure</em> i el conegudíssim presentador de televisió <em>Jordi Hurtado</em>, qui segueix viu a dia d'avui. En canvi, l'<em>espinosaure</em> no segueix viu a dia d'avui, ja que va morir, però el seu disseny es segueix actualitzant any rere any ja que els científics no s'aclaren sobre com era en realitat. És difícil balancejar un joc amb tantíssims personatges diferents.<br>
+          </div>
+        </nav>
+      
+        <div class="container vw-90">
+          <button id="manbutn" class="btn fixed-top-btn d-lg-none rounded-circle bgc-verd-3 txc-groc-1" data-bs-target="#manual" data-bs-toggle="collapse" aria-label="Toggle Manual section"><i class="fa-solid fa-book-bookmark"></i>Manual</button>
+      
+          <div class="row">
+            <main class="col p-4 bgc-verd-0" aria-label="Main content">
+              <article id="historia" aria-labelledby="historia-heading">
+                <h2 id="historia-heading">Pre-Història dels dinosaures</h2>
+                <section aria-labelledby="paleozoic-heading">
+                  <h3 id="paleozoic-heading">Paleozoic</h3>
+                  <p>Amb una duració de <strong>290 milions d'anys</strong> (fa 541 milions d'anys enrere fins fa 252 milions d'anys), aquesta era comença amb la <strong>desintegració del supercontinent Pannotia</strong> i acaba amb la <strong>formació de Pangea.</strong><br>
+                    En aquest període sorgeixen els <strong>invertebrats amb closca i exoesquelet</strong>, així com l'inici del regnat dels grans rèptils, els que mesuraven més de dues rentadores apilades una sobre de l'altra. <br>
+                    Pangea va ser el terreny de joc durant milers d'anys on tots els èssers vius convivien en harmonía sense necessitats de fronteres ni nacions. Tant va ser la pau durant aquest període, que molts fanàtics del supercontintent segueixen a dia d'avui difundint propaganda amb el lema de <strong>"Boicot al euro, que vuelva Pangea".</strong><br>
+                    A l'igual que als altres períodes, molts dels animals que van aparèixer durant el Paleozoic es van acabar extingint abans de que comencés el següent. Això implica que dinosaures com l'<em>estegosaure</em> i el <em>tiranosaure</em> no van conviure junts, per molt que alguns medis ho retratessin com a tal.<br> 
+                    Durant aquest temps, apareixen criatures com els <em>trilobites</em>, el <em>dimetrodon</em>, el <em>mesosaurus</em> i el rei <em>Joan Carles</em>.<br>
+                    <img class="fotos_historia" src="imatges/dimetrodon.jpg">
+                    </p>
+                </section>
+                <section aria-labelledby="mesozoic-heading">
+                  <h3 id="mesozoic-heading">Mesozoic</h3>
+                  <p>Aquesta era va començar fa 251 milions d'anys i va acabar 66 milions d'anys enrere. Aquesta època va estar dominada pels grans rèptils, al mateix temps que apareixien els primers mamífers i les primeres aus, igual que les primeres plantes amb flors.<br>
+                    Algunes de les criatures més característiques d'aquesta era són el diplodocus, l'estegosaure, el triceratops, l'espinosaure i el conegudíssim presentador de televisió Jordi Hurtado, qui segueix viu a dia d'avui. En canvi, l'espinosaure no segueix viu a dia d'avui, ja que va morir, però el seu disseny es segueix actualitzant any rere any ja que els científics no s'aclaren sobre com era en realitat. És difícil balancejar un joc amb tantíssims personatges diferents.<br>
                     <img class="fotos_historia" src="imatges/spinorsaurus.jpg"> <br>
                     Una versió primitiva del tren, la <strong>REIFD</strong> (Red Internacional de Ferrocarriles de Dinosaurios), va ser inventada i amb ella es va rodar la sèrie preferida de tots els bebés dinosaure: <em>Dinotren</em>. Malauradament, tots els actors que apareixen a la sèrie han mort o es troben en parader desconegut. L'indústria de Dinowood era molt dura (i prehistòrica), amb molt poca regulació dels nens actors i sense cap presupost per a efectes especials. És clar, no teníen ni foc.
                     </p>
-        </section>
-        <section>
-          <h3>Cenozoic</h3>
-          <p> <img class="fotos_historia" src="imatges/extincion.jpg"> <br><br>
-          Aquesta va ser l'útlima era del regnat dels dinosaures, amb una durada de <strong>65,5 milions d'anys</strong>. En aquest moment, els dinosaures ja no regnaven la terra i la <strong>proliferació dels mamífers i les aus</strong> va ser inminent. Els dinosaures estaven oficialment retirats i el seu regnat, acabat. Era l'hora de la democràcia.<br>
-          En la coneguda com la <strong>Era del Gel</strong>, els animals més característics són el <em>mamut</em>, el <em>tigre dents de sable</em> o el <em>megatherium</em>, a més a més de que apareixeríen els <strong>primers homínids</strong> de l'espècie Homo.<br>
-          La cultura popular ha fet creure que durant aquests anys, feia fred en tota la Terra, però la realitat es que feien 40 graus a l'ombra, com a Murcia. En aquesta era té lloc la saga de <em>Ice Age</em>, però tots sabem que és històricament incorrecta ja que els mamuts no tenen aquest accèn sevillà.
-          </p>
-        </section>  
-        </article>          
-        <hr>
-        <section id="classificacio">
-            <h2>Classificació</h2>
-            <div class="col-12 p-2 my-1 subsection  bgc-verd-2 txc-groc-1">
-                <h3>Apareixen a Jurassic Park</h3><br>
-                <div id="multiItemCarousel" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
+                </section>
+                <section aria-labelledby="cenozoic-heading">
+                  <h3 id="cenozoic-heading">Cenozoic</h3>
+                  <p> <img class="fotos_historia" src="imatges/extincion.jpg"> <br><br>
+                    Aquesta va ser l'útlima era del regnat dels dinosaures, amb una durada de <strong>65,5 milions d'anys</strong>. En aquest moment, els dinosaures ja no regnaven la terra i la <strong>proliferació dels mamífers i les aus</strong> va ser inminent. Els dinosaures estaven oficialment retirats i el seu regnat, acabat. Era l'hora de la democràcia.<br>
+                    En la coneguda com la <strong>Era del Gel</strong>, els animals més característics són el <em>mamut</em>, el <em>tigre dents de sable</em> o el <em>megatherium</em>, a més a més de que apareixeríen els <strong>primers homínids</strong> de l'espècie Homo.<br>
+                    La cultura popular ha fet creure que durant aquests anys, feia fred en tota la Terra, però la realitat es que feien 40 graus a l'ombra, com a Murcia. En aquesta era té lloc la saga de <em>Ice Age</em>, però tots sabem que és històricament incorrecta ja que els mamuts no tenen aquest accèn sevillà.
+                  </p>
+                </section>
+              </article>
+              <hr>
+              <section id="classificacio" aria-labelledby="classificacio-heading">
+                <h2 id="classificacio-heading">Classificació</h2>
+                <div class="col-12 p-2 my-1 subsection bgc-verd-2 txc-groc-1" aria-labelledby="jurassic-heading">
+                  <h3 id="jurassic-heading">Apareixen a Jurassic Park</h3>
+                  <div id="multiItemCarousel" class="carousel slide" data-bs-ride="carousel" aria-label="Jurassic Park carousel">
+                    <div class="carousel-inner">
                       <div class="carousel-item active">
-                          <div class="row g-0">
-                              <div class="col-4">
-                                  <img src="imatges/jurassicpark/blue_jp.jpg" class="d-block w-100" alt="Velociraptors de Jurassic World">
-                              </div>
-                              <div class="col-4">
-                                  <img src="imatges/jurassicpark/pajaro_jp.webp" class="d-block w-100" alt="Velociraptor amb plomes de Jurassic World 3">
-                              </div>
-                              <div class="col-4">
-                                  <img src="imatges/jurassicpark/dinos_jp.webp" class="d-block w-100" alt="Múltiples dinosaures i els protagonistes de Jurassic World 2">
-                              </div>
+                        <div class="row g-0">
+                          <div class="col-4">
+                            <img src="imatges/jurassicpark/blue_jp.jpg" class="d-block w-100" alt="Velociraptors from Jurassic World">
                           </div>
-                      </div>
-                      <div class="carousel-item">
-                          <div class="row g-0">
-                              <div class="col-4">
-                                  <img src="imatges/jurassicpark/indominus_jp.webp" class="d-block" alt="Funko Pop de l'Indominus Rex de Jurassic World">
-                              </div>
-                              <div class="col-4">
-                                  <img src="imatges/jurassicpark/jeff_jp.jpg" class="d-block" alt="Jeff Goldblum a Jurassic Park">
-                              </div>
-                              <div class="col-4">
-                                  <img src="imatges/jurassicpark/rex_jp.jpg" class="d-block" alt="T-Rex de Jurassic World">
-                              </div>
+                          <div class="col-4">
+                            <img src="imatges/jurassicpark/pajaro_jp.webp" class="d-block w-100" alt="Feathered velociraptor from Jurassic World 3">
                           </div>
+                          <div class="col-4">
+                            <img src="imatges/jurassicpark/dinos_jp.webp" class="d-block w-100" alt="Multiple dinosaurs and characters from Jurassic World 2">
+                          </div>
+                        </div>
                       </div>
-                  </div>
-          
-                  <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="prev">
+                      <!-- Additional carousel items here -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="prev" aria-label="Previous slide">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next " type="button" data-bs-target="#multiItemCarousel" data-bs-slide="next">
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="next" aria-label="Next slide">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                  </button>
-              </div>
-              </div>
-                
-                <div class="col-12 p-2 my-1 subsection  bgc-verd-2 txc-groc-1">
+                    </button>
+                  </div>
+                </div>
+                <div class="col-12 p-2 my-1 subsection  bgc-verd-2 txc-groc-1" aria-labelledby="dinotren-heading">
                 <h3>Apareixen al Dinotren</h3><br>
-                <div id="multiItemCarousel2" class="carousel slide" data-bs-ride="carousel">
+                <div id="multiItemCarousel2" class="carousel slide" data-bs-ride="carousel" aria-label="Dinotren carousel">
                   <div class="carousel-inner">
                       <div class="carousel-item active">
                           <div class="row g-0">
@@ -175,11 +157,11 @@
                       </div>
                   </div>
           
-                  <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel2" data-bs-slide="prev">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel2" data-bs-slide="prev" aria-label="Previous slide">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel2" data-bs-slide="next">
+                  <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel2" data-bs-slide="next" aria-label="Next slide">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                   </button>
@@ -187,9 +169,9 @@
               </div>
 
                 
-                <div class="col-12 p-2 my-1 subsection  bgc-verd-2 txc-groc-1">
+                <div class="col-12 p-2 my-1 subsection  bgc-verd-2 txc-groc-1" aria-labelledby="pokemon-heading">
                 <h3>Són Pokémon</h3><br>
-                <div id="multiItemCarousel3" class="carousel slide" data-bs-ride="carousel">
+                <div id="multiItemCarousel3" class="carousel slide" data-bs-ride="carousel" aria-labelledby="pokemon-carrousel">
                   <div class="carousel-inner">
                       <div class="carousel-item active">
                           <div class="row g-0">
@@ -220,104 +202,116 @@
                       </div>
                   </div>
           
-                  <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel3" data-bs-slide="prev">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel3" data-bs-slide="prev" aria-label="Previous slide">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel3" data-bs-slide="next">
+                  <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel3" data-bs-slide="next" aria-label="Next slide">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                   </button>
               </div>
             </div>
         </section> 
-        <hr>
-        <section id="descobriments">
-          
-          
-            <h2>Descobriments recents</h2>
-          <div id="articlespace">
+        <hr><section id="descobriments" aria-labelledby="recent-discoveries">
+          <h2 id="recent-discoveries">Descobriments recents</h2>
+          <div id="articlespace" aria-label="Article space with recent dinosaur discoveries">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-2 g-lg-2">
               <div class="col">
-                <article class="p-2 bgc-verd-2">
-                  <img class="fotos_noticia" src="imatges/noticies/noticia1.jpg">
-                  <h4 class="txc-blanc">Troben un velociraptor a la jungla d'Albacete</h4>
-                  <p><a class="txc-groc-1" href="#">fauriosactos.es</a></p>
+                <article class="p-2 bgc-verd-2" aria-labelledby="velociraptor-title">
+                  <img class="fotos_noticia" src="imatges/noticies/noticia1.jpg" alt="Image of velociraptor found in Albacete jungle">
+                  <h4 id="velociraptor-title" class="txc-blanc">Troben un velociraptor a la jungla d'Albacete</h4>
+                  <p><a class="txc-groc-1" href="#" aria-label="Link to article on fauriosactos.es">fauriosactos.es</a></p>
                 </article>
               </div>
               <div class="col">
-                <article class="p-2 bgc-verd-2">
-                  <img class="fotos_noticia" src="imatges/noticies/noticia2.jpg">
-                  <h4 class="txc-blanc">Tiranosaure sembra el caos per Barcelona, resulta ser un home disfressat</h4>
-                  <p><a class="txc-groc-1" href="#">laveudebarcelona.cat</a></p>
+                <article class="p-2 bgc-verd-2" aria-labelledby="tiranosaure-title">
+                  <img class="fotos_noticia" src="imatges/noticies/noticia2.jpg" alt="Image of Tiranosaure causing chaos in Barcelona">
+                  <h4 id="tiranosaure-title" class="txc-blanc">Tiranosaure sembra el caos per Barcelona, resulta ser un home disfressat</h4>
+                  <p><a class="txc-groc-1" href="#" aria-label="Link to article on laveudebarcelona.cat">laveudebarcelona.cat</a></p>
                 </article>
               </div>
               <div class="col">
-                <article class="p-2 bgc-verd-2">
-                  <img class="fotos_noticia" src="imatges/noticies/noticia3.jpg">
-                  <h4 class="txc-blanc">Intercanvien els fòssils d'un museu per models de LEGO</h4>
-                  <p><a class="txc-groc-1" href="https://www.museodelprado.es">museodelprado.es</a></p>
+                <article class="p-2 bgc-verd-2" aria-labelledby="lego-title">
+                  <img class="fotos_noticia" src="imatges/noticies/noticia3.jpg" alt="Image showing LEGO fossil model replacement in a museum">
+                  <h4 id="lego-title" class="txc-blanc">Intercanvien els fòssils d'un museu per models de LEGO</h4>
+                  <p><a class="txc-groc-1" href="https://www.museodelprado.es" aria-label="Link to article on museodelprado.es">museodelprado.es</a></p>
                 </article>
               </div>
               <div class="col">
-                <article class="p-2 bgc-verd-2">
-                  <img class="fotos_noticia" src="imatges/noticies/noticia4.jpg">
-                  <h4 class="txc-blanc">Un triceratops escapa del zoo de Barcelona</h4>
-                  <p><a class="txc-groc-1" href="https://zoobarcelona.cat/es">zoobarcelona.cat</a></p>
+                <article class="p-2 bgc-verd-2" aria-labelledby="triceratops-title">
+                  <img class="fotos_noticia" src="imatges/noticies/noticia4.jpg" alt="Image of Triceratops escaping from Barcelona zoo">
+                  <h4 id="triceratops-title" class="txc-blanc">Un triceratops escapa del zoo de Barcelona</h4>
+                  <p><a class="txc-groc-1" href="https://zoobarcelona.cat/es" aria-label="Link to article on zoobarcelona.cat">zoobarcelona.cat</a></p>
                 </article>
               </div>
               <div class="col">
-                <article class="p-2 bgc-verd-2">
-                  <img class="fotos_noticia" src="imatges/noticies/noticia5.jpg">
-                  <h4 class="txc-blanc">Noticia bomba: tots els dinosaures estan morts</h4>
-                  <p><a class="txc-groc-1" href="#">licalotopus.com</a></p>
+                <article class="p-2 bgc-verd-2" aria-labelledby="dinosaurs-dead-title">
+                  <img class="fotos_noticia" src="imatges/noticies/noticia5.jpg" alt="Image suggesting dinosaur extinction">
+                  <h4 id="dinosaurs-dead-title" class="txc-blanc">Noticia bomba: tots els dinosaures estan morts</h4>
+                  <p><a class="txc-groc-1" href="#" aria-label="Link to article on licalotopus.com">licalotopus.com</a></p>
                 </article>
               </div>
               <div class="col">
-                <article class="p-2 bgc-verd-2">
-                  <img class="fotos_noticia" src="imatges/noticies/noticia6.jpg">
-                  <h4 class="txc-blanc">Troben una zona amagada en l'Antàrtida on els dinosaures encara viuen</h4>
-                  <p><a class="txc-groc-1" href="#">lesquiroldeice.age</a></p>
+                <article class="p-2 bgc-verd-2" aria-labelledby="antarctica-title">
+                  <img class="fotos_noticia" src="imatges/noticies/noticia6.jpg" alt="Image showing hidden dinosaur zone in Antarctica">
+                  <h4 id="antarctica-title" class="txc-blanc">Troben una zona amagada en l'Antàrtida on els dinosaures encara viuen</h4>
+                  <p><a class="txc-groc-1" href="#" aria-label="Link to article on lesquiroldeice.age">lesquiroldeice.age</a></p>
                 </article>
               </div>
             </div>
-        </div>
-        </section>
+          </div>
+        </section>        
         <hr>
-        <section id="curiositats">
-            <h2 >Curiositats</h2>
-                <ol>
-                  <li>Al contrari del que diguin els científics, les aus <strong>NO</strong> van evolucionar dels dinosaures, bàsicament perquè <strong>les aus no existeixen</strong>.</li>
-                  <img class="fotos_curiositats" src="imatges/curiositats/curiositat1.webp">
-                  <li>El branquiosaure <strong>NO</strong> tenia branquies.</li>
-                  <img class="fotos_curiositats" src="imatges/curiositats/curiositat2.jpg">
-                  <li>El broncasaure <strong>SI</strong> buscaba bronca contínuament.</li>
-                  <img class="fotos_curiositats" src="imatges/curiositats/curiositat3.png">
-                  <li>A la saga de Jurassic Park no surt cap dinosaure real, això és degut a que <strong>no hi han dinosaures actors</strong>.</li>
-                  <img class="fotos_curiositats" src="imatges/curiositats/curiositat4.jpg">
-                  <li>Els taurons i cocodrils són <strong>tant antics</strong> (o més) que els dinosaures, però no tenen tantes películes. Una mica injust no?</li>
-                  <img class="fotos_curiositats" src="imatges/curiositats/curiositat5.jpg">
-                  <li>Animals com el mosasaure, el plesiosaure o l'ictiosaure, al igual que molts altres criatures marines prehistòriques, <storng>no eren dinosaures</storng>, sinó rèptils marins.</li>
-                  <img class="fotos_curiositats" src="imatges/curiositats/curiositat6.jpg">
-                  <li>El mateix es pot dir dels rèptils voladors com el pteranodon o el dinomorphodon, <strong>no eren dinosaures</strong>.</li>
-                  <img class="fotos_curiositats" src="imatges/curiositats/curiositat7.jpg">
-                  <li>Els dinosaures <strong>no es van extingir</strong>, no et creguis el que digui el govern.</li>
-                  <img class="fotos_curiositats" src="imatges/curiositats/curiositat8.jpg">
-                  <li>Els dinosaures <strong>no saben programar en HTML</strong> i qui ha escrit això tampoc.</li>
-                  <img class="fotos_curiositats" src="imatges/curiositats/curiositat9.jpg">
-                  <li>L'anterior curiositat és falsa, els dinosaures <strong>sí</strong> que saben programar en HTML.</li>
-                  <img class="fotos_curiositats" src="imatges/curiositats/curiositat10.jpg">
-                  <li>Investigacions més recents demostren que els dinosaures <strong>tenien plomes</strong>, o una versió primitiva d'aquestes.</li>
-                  <img class="fotos_curiositats" src="imatges/curiositats/curiositat11.jpg">
-                  <li>Els nostres dinosaures preferits són <strong>l'espinosaure</strong> i les <strong>galetes dinosaurus</strong>.</li>
-                  <img class="fotos_curiositats" src="imatges/curiositats/curiositat12.jpg">
-                  <li>Les galetes dinosaurus <strong>no</strong> saben a dinosaure.</li>
-                  <img class="fotos_curiositats" src="imatges/curiositats/curiositat13.jpg">
-                  <li>Però les Oreos <strong>sí</strong>.</li>
-                  <li>Els dodos es van <strong>extingir per tontos</strong>.</li>
-                  <img class="fotos_curiositats" src="imatges/curiositats/curiositat15.webp">
-                </ol>
-</section>
+        <section id="curiositats" aria-labelledby="curiositats-title">
+          <h2 id="curiositats-title">Curiositats</h2>
+          <ol aria-label="Llista de fets curiosos sobre els dinosaures">
+            <li>Al contrari del que diguin els científics, les aus <strong>NO</strong> van evolucionar dels dinosaures, bàsicament perquè <strong>les aus no existeixen</strong>.</li>
+            <img class="fotos_curiositats" src="imatges/curiositats/curiositat1.webp" alt="Imatge humorística qüestionant l'evolució de les aus" aria-label="Imatge relacionada amb el fet sobre l'evolució de les aus">
+            
+            <li>El branquiosaure <strong>NO</strong> tenia branquies.</li>
+            <img class="fotos_curiositats" src="imatges/curiositats/curiositat2.jpg" alt="Imatge que clarifica que el branquiosaure no tenia brànquies" aria-label="Imatge sobre l'anatomia del branquiosaure">
+            
+            <li>El broncasaure <strong>SI</strong> buscaba bronca contínuament.</li>
+            <img class="fotos_curiositats" src="imatges/curiositats/curiositat3.png" alt="Imatge fent broma sobre el broncasaure buscant problemes" aria-label="Imatge sobre el comportament del broncasaure">
+            
+            <li>A la saga de Jurassic Park no surt cap dinosaure real, això és degut a que <strong>no hi han dinosaures actors</strong>.</li>
+            <img class="fotos_curiositats" src="imatges/curiositats/curiositat4.jpg" alt="Imatge humorística sobre la falta de dinosaures reals a Jurassic Park" aria-label="Imatge relacionada amb fets sobre Jurassic Park">
+            
+            <li>Els taurons i cocodrils són <strong>tant antics</strong> (o més) que els dinosaures, però no tenen tantes películes. Una mica injust no?</li>
+            <img class="fotos_curiositats" src="imatges/curiositats/curiositat5.jpg" alt="Imatge que compara l'antiguitat dels taurons i cocodrils amb la dels dinosaures" aria-label="Imatge sobre animals antics com els taurons i cocodrils">
+            
+            <li>Animals com el mosasaure, el plesiosaure o l'ictiosaure, al igual que molts altres criatures marines prehistòriques, <storng>no eren dinosaures</storng>, sinó rèptils marins.</li>
+            <img class="fotos_curiositats" src="imatges/curiositats/curiositat6.jpg" alt="Imatge de rèptils marins que no són dinosaures" aria-label="Imatge de rèptils marins com el mosasaure i el plesiosaure">
+            
+            <li>El mateix es pot dir dels rèptils voladors com el pteranodon o el dinomorphodon, <strong>no eren dinosaures</strong>.</li>
+            <img class="fotos_curiositats" src="imatges/curiositats/curiositat7.jpg" alt="Imatge de rèptils voladors que no són dinosaures" aria-label="Imatge de rèptils voladors com el pteranodon">
+            
+            <li>Els dinosaures <strong>no es van extingir</strong>, no et creguis el que digui el govern.</li>
+            <img class="fotos_curiositats" src="imatges/curiositats/curiositat8.jpg" alt="Imatge humorística suggerint que els dinosaures mai es van extingir" aria-label="Imatge sobre la teoria de l'extinció dels dinosaures">
+            
+            <li>Els dinosaures <strong>no saben programar en HTML</strong> i qui ha escrit això tampoc.</li>
+            <img class="fotos_curiositats" src="imatges/curiositats/curiositat9.jpg" alt="Imatge suggerint que els dinosaures no poden programar en HTML" aria-label="Imatge sobre les habilitats de programació dels dinosaures">
+            
+            <li>L'anterior curiositat és falsa, els dinosaures <strong>sí</strong> que saben programar en HTML.</li>
+            <img class="fotos_curiositats" src="imatges/curiositats/curiositat10.jpg" alt="Imatge que afirma humorísticament que els dinosaures saben HTML" aria-label="Imatge en suport de les habilitats de programació dels dinosaures">
+            
+            <li>Investigacions més recents demostren que els dinosaures <strong>tenien plomes</strong>, o una versió primitiva d'aquestes.</li>
+            <img class="fotos_curiositats" src="imatges/curiositats/curiositat11.jpg" alt="Imatge que mostra dinosaures amb plomes primitives" aria-label="Imatge sobre les plomes dels dinosaures">
+            
+            <li>Els nostres dinosaures preferits són <strong>l'espinosaure</strong> i les <strong>galetes dinosaurus</strong>.</li>
+            <img class="fotos_curiositats" src="imatges/curiositats/curiositat12.jpg" alt="Imatge d'un espinosaure i galetes amb forma de dinosaure" aria-label="Imatge de l'espinosaure i galetes de dinosaure">
+            
+            <li>Les galetes dinosaurus <strong>no</strong> saben a dinosaure.</li>
+            <img class="fotos_curiositats" src="imatges/curiositats/curiositat13.jpg" alt="Imatge que afirma que les galetes de dinosaure no tenen gust de dinosaure" aria-label="Imatge sobre les galetes de dinosaure">
+            
+            <li>Però les Oreos <strong>sí</strong>.</li>
+            
+            <li>Els dodos es van <strong>extingir per tontos</strong>.</li>
+            <img class="fotos_curiositats" src="imatges/curiositats/curiositat15.webp" alt="Imatge humorística que explica l'extinció dels dodos" aria-label="Imatge sobre el motiu de l'extinció dels dodos">
+          </ol>
+        </section>
+        
 <hr>
 <section id="p5js">
 
@@ -336,29 +330,37 @@
 </section>
 
          </main>
-        
-    <aside id="manual" class="col-md-4 col-xs-6 p-4 collapse collapse-horizontal d-lg-block bgc-verd-1">
-        <h2>Gran Manual per Identificar Dinosaures</h2>
-        <p>Tot i que molts de nosaltres creiem entendre el que és un dinosaure, hi ha varies espècies a les que categòricament, no se'ls pot aplicar aquest terme, com per exemple el julivert.<br>
-        Aquest manual apunta a ser la guia definitiva per que aficionats en potencia com tu i com jo poguem identificar amb arguments quines criatures són realment dinosaures</p>
-        <h3>1. Existeix?</h3>
-        <p>És comú pensar que a dia d'avui no queda cap dinosaure amb vida, hi ha qui diu allò dels ocells, pero realment et creuràs propaganda gubernamental tant obvia?<br>Tot i així, a l'any actual, 12024 HE, els dinosaures encara caminen entre nosaltres, només cal donar un tomb per qualsevol zona rural d'Espanya</p>
-        <img src="imatges/nessie.png" style="width:100%">
-        <p>El mostre del llac Ness, conegut com a "Nessie" o "Narcís" pels familiars, ocell nacional d'Escocia i de fama mundial pels seus concerts de gaita el segon dissabte de cada mes, es un Plesiosaure, el qual, per molt que ho indiqui el nom, no es troba dins la cateoria de la Dinosauria, sinó que, com es obvi per la seva forma, és una girafa molla amb torticulis.</p>
-        <h3>2. Saber fer servir la boca</h3>
-        <p>Una pista que mai falla per a identificar dinosaures és fixar-se en la seva dentadura. Si mai et trobes davant d'una criatura i ets capaç de comptar el nombre de dents que te, segurament ja és massa tard, a no ser que conservis els teus queixals del seny, en qual cas tu també comptaràs com a dinosaure i no tindràs tant bon gust.<br></p>
-          <img class="lego" src="imatges/3648_white.png" style="width:60%"><p> Si ets capaç de comptar 24 dents i 5 cavitats, una de les quals te forma de creu, pots estar segur al 100% que el que estas observant no és un dinosaure, sinó la peça de LEGO 3648, Engranatge de 24 dents i 1 forat axial.</p>
-    
-        <h3>3.Molta ploma</h3>
-        <p>Existeix un gran debat científic sobre si els dinosaures tenien plomes o no, francament a nivell personal em sembla molt poc progressiu i insensible de part de la comunitat cientifica, la majoria aquests éssers porten morts milions d'anys i ara ens posem a discutir la seva sexualitat? Eren uns altres temps, no hi havia tanta conscienciació i és d'esperar que molts haguessin d'amagar la seva manera de ser, per por a rebre algun càstig del cel.<br>
-        Tot i així, alguns exemplars no tenien cap mena de por a expressar-se amb tota la seva llibertat, com per exemple el Velociraptor, que segons s'ha determinat recentment, austentava un plomatge colorit i va participar a les primeres edicions de la Drag Race de RuPaul.</p>
-        <img src="imatges/galociraptor.png" style="width:60%"><br><br>
-
-          <h3>4.El Llom del Diplodocus</h3>
-          <p>Com tots sabem, els inventors originals dels dinosaures son els membres del grup musical català "El Pony Pisador", a la seva cançó "El Llom del Diplodocus" actua com a biblia maxima i qualsevol cosa que no apareixi a aquest video no es un dinosaure</p>
-        <iframe width="100%" height="4%" src="https://www.youtube.com/embed/a58qZNQGeTI?si=q_UC1QlDcp-rsAHK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         <aside id="manual" class="col-md-4 col-xs-6 p-4 collapse collapse-horizontal d-lg-block bgc-verd-1" aria-labelledby="manualTitle" aria-describedby="manualDescription">
+          <h2 id="manualTitle">Gran Manual per Identificar Dinosaures</h2>
+          <p id="manualDescription">
+              Tot i que molts de nosaltres creiem entendre el que és un dinosaure, hi ha varies espècies a les que categòricament, no se'ls pot aplicar aquest terme, com per exemple el julivert.
+              Aquest manual apunta a ser la guia definitiva per que aficionats en potencia com tu i com jo poguem identificar amb arguments quines criatures són realment dinosaures.
+          </p>
+      
+          <h3 id="sectionExist" aria-label="Pas 1: Confirmar l'existència">1. Existeix?</h3>
+          <p>És comú pensar que a dia d'avui no queda cap dinosaure amb vida, hi ha qui diu allò dels ocells, pero realment et creuràs propaganda gubernamental tant obvia?
+             Tot i així, a l'any actual, 12024 HE, els dinosaures encara caminen entre nosaltres, només cal donar un tomb per qualsevol zona rural d'Espanya.
+          </p>
+          <img src="imatges/nessie.png" style="width:100%" alt="Imatge del mostre del Llac Ness, conegut com a Nessie o Narcís, un plesiosaure no considerat com un dinosaure">
+      
+          <p>El mostre del llac Ness, conegut com a "Nessie" o "Narcís" pels familiars, ocell nacional d'Escocia i de fama mundial pels seus concerts de gaita el segon dissabte de cada mes, es un Plesiosaure, el qual, per molt que ho indiqui el nom, no es troba dins la categoria de la Dinosauria, sinó que, com es obvi per la seva forma, és una girafa molla amb torticulis.</p>
+      
+          <h3 id="sectionMouth" aria-label="Pas 2: Fixar-se en la boca">2. Saber fer servir la boca</h3>
+          <p>Una pista que mai falla per a identificar dinosaures és fixar-se en la seva dentadura. Si mai et trobes davant d'una criatura i ets capaç de comptar el nombre de dents que te, segurament ja és massa tard, a no ser que conservis els teus queixals del seny, en qual cas tu també comptaràs com a dinosaure i no tindràs tant bon gust.</p>
+          <img class="lego" src="imatges/3648_white.png" style="width:60%" alt="Peça de LEGO 3648, un engranatge de 24 dents amb una cavitat axial en forma de creu">
+          <p>Si ets capaç de comptar 24 dents i 5 cavitats, una de les quals te forma de creu, pots estar segur al 100% que el que estas observant no és un dinosaure, sinó la peça de LEGO 3648, Engranatge de 24 dents i 1 forat axial.</p>
+      
+          <h3 id="sectionFeathers" aria-label="Pas 3: Presència de plomes">3. Molta ploma</h3>
+          <p>Existeix un gran debat científic sobre si els dinosaures tenien plomes o no, francament a nivell personal em sembla molt poc progressiu i insensible de part de la comunitat cientifica, la majoria aquests éssers porten morts milions d'anys i ara ens posem a discutir la seva sexualitat? 
+             Tot i així, alguns exemplars no tenien cap mena de por a expressar-se amb tota la seva llibertat, com per exemple el Velociraptor, que segons s'ha determinat recentment, austentava un plomatge colorit i va participar a les primeres edicions de la Drag Race de RuPaul.
+          </p>
+          <img src="imatges/galociraptor.png" style="width:60%" alt="Il·lustració d'un Velociraptor amb un colorit plomatge inspirat en RuPaul's Drag Race">
+      
+          <h3 id="sectionDiplodocus" aria-label="Pas 4: Seguir el manual">4. El Llom del Diplodocus</h3>
+          <p>Com tots sabem, els inventors originals dels dinosaures son els membres del grup musical català "El Pony Pisador", a la seva cançó "El Llom del Diplodocus" actua com a biblia maxima i qualsevol cosa que no apareixi a aquest video no es un dinosaure.</p>
+          <iframe width="100%" height="4%" src="https://www.youtube.com/embed/a58qZNQGeTI?si=q_UC1QlDcp-rsAHK" title="YouTube video del Pony Pisador sobre el Llom del Diplodocus" frameborder="0" aria-label="Video explicatiu sobre la identificació de dinosaures, creat pel grup El Pony Pisador" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </aside>
-    
+      
     </div>
     <footer class="container bgc-verd-3 txc-blanc p-4" aria-label="pie de la web">
       <div class="row">
