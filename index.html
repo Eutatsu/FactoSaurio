@@ -6,8 +6,6 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initialscale=1.0">
-        <link rel="stylesheet" href="fonts.css" media="none” onload=" if(media!='all' )media='all'>
-        <noscript><link rel="stylesheet " href="fonts.css "></noscript>
         <link rel="icon" href="imatges/favicon.png">
         
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbars/">
@@ -99,7 +97,7 @@
                 <h2 id="classificacio-heading">Classificació</h2>
                 <div class="col-12 p-2 my-1 subsection bgc-verd-2 txc-groc-1" aria-labelledby="jurassic-heading">
                   <h3 id="jurassic-heading">Apareixen a Jurassic Park</h3>
-                  <div id="multiItemCarousel" class="carousel slide" data-bs-ride="carousel" aria-label="Jurassic Park carousel">
+                  <div id="jurassic-carousel" class="carousel slide" data-bs-ride="carousel" aria-labelledby="jurassic-carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <div class="row g-0">
@@ -130,17 +128,17 @@
                         </div>
                     </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="prev" aria-label="Previous slide">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#jurassic-carrousel" data-bs-slide="prev" aria-label="Previous slide">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="next" aria-label="Next slide">
+                    <button class="carousel-control-next" type="button" data-bs-target="#jurassic-carrousel" data-bs-slide="next" aria-label="Next slide">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     </button>
                   </div>
                 </div>
                 <div class="col-12 p-2 my-1 subsection  bgc-verd-2 txc-groc-1" aria-labelledby="dinotren-heading">
-                <h3>Apareixen al Dinotren</h3><br>
-                <div id="multiItemCarousel2" class="carousel slide" data-bs-ride="carousel" aria-label="Dinotren carousel">
+                <h3  id="dinotren-heading">Apareixen al Dinotren</h3><br>
+                <div id="dinotren-carousel" class="carousel slide" data-bs-ride="carousel" aria-labelledby="dinotren-carousel">
                   <div class="carousel-inner">
                       <div class="carousel-item active">
                           <div class="row g-0">
@@ -171,11 +169,11 @@
                       </div>
                   </div>
           
-                  <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel2" data-bs-slide="prev" aria-label="Previous slide">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#dinotren-carrousel" data-bs-slide="prev" aria-label="Previous slide">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel2" data-bs-slide="next" aria-label="Next slide">
+                  <button class="carousel-control-next" type="button" data-bs-target="#dinotren-carrousel" data-bs-slide="next" aria-label="Next slide">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                   </button>
@@ -184,8 +182,8 @@
 
                 
                 <div class="col-12 p-2 my-1 subsection  bgc-verd-2 txc-groc-1" aria-labelledby="pokemon-heading">
-                <h3>Són Pokémon</h3><br>
-                <div id="multiItemCarousel3" class="carousel slide" data-bs-ride="carousel" aria-labelledby="pokemon-carrousel">
+                <h3  id="pokemon-heading">Són Pokémon</h3><br>
+                <div id="pokemon-carousel" class="carousel slide" data-bs-ride="carousel" aria-labelledby="pokemon-carousel">
                   <div class="carousel-inner">
                       <div class="carousel-item active">
                           <div class="row g-0">
@@ -216,11 +214,11 @@
                       </div>
                   </div>
           
-                  <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel3" data-bs-slide="prev" aria-label="Previous slide">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#pokemon-carrousel" data-bs-slide="prev" aria-label="Previous slide">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel3" data-bs-slide="next" aria-label="Next slide">
+                  <button class="carousel-control-next" type="button" data-bs-target="#pokemon-carrousel" data-bs-slide="next" aria-label="Next slide">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="visually-hidden">Next</span>
                   </button>
@@ -229,7 +227,7 @@
         </section> 
         <hr><section id="descobriments" aria-labelledby="recent-discoveries">
           <h2 id="recent-discoveries">Descobriments recents</h2>
-          <div id="articlespace" aria-label="Article space with recent dinosaur discoveries">
+          <div id="articlespace" >
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-2 g-lg-2">
               <div class="col">
                 <article class="p-2 bgc-verd-3" aria-labelledby="velociraptor-title">
@@ -280,50 +278,50 @@
         <section id="curiositats" aria-labelledby="curiositats-title">
           <h2 id="curiositats-title">Curiositats</h2>
           <ol aria-label="Llista de fets curiosos sobre els dinosaures">
-            <li>Al contrari del que diguin els científics, les aus <strong>NO</strong> van evolucionar dels dinosaures, bàsicament perquè <strong>les aus no existeixen</strong>.</li>
-            <img class="fotos_curiositats" src="imatges/curiositats/curiositat1.webp" alt="Imatge humorística qüestionant l'evolució de les aus" aria-label="Imatge relacionada amb el fet sobre l'evolució de les aus">
+            <li>Al contrari del que diguin els científics, les aus <strong>NO</strong> van evolucionar dels dinosaures, bàsicament perquè <strong>les aus no existeixen</strong>.<br><img class="fotos_curiositats" src="imatges/curiositats/curiositat1.webp" alt="Imatge humorística qüestionant l'evolució de les aus" aria-label="Imatge relacionada amb el fet sobre l'evolució de les aus"></li>
             
-            <li>El branquiosaure <strong>NO</strong> tenia branquies.</li>
-            <img class="fotos_curiositats" src="imatges/curiositats/curiositat2.jpg" alt="Imatge que clarifica que el branquiosaure no tenia brànquies" aria-label="Imatge sobre l'anatomia del branquiosaure">
             
-            <li>El broncasaure <strong>SI</strong> buscaba bronca contínuament.</li>
-            <img class="fotos_curiositats" src="imatges/curiositats/curiositat3.png" alt="Imatge fent broma sobre el broncasaure buscant problemes" aria-label="Imatge sobre el comportament del broncasaure">
+            <li>El branquiosaure <strong>NO</strong> tenia branquies.  <br><img class="fotos_curiositats" src="imatges/curiositats/curiositat2.jpg" alt="Imatge que clarifica que el branquiosaure no tenia brànquies" aria-label="Imatge sobre l'anatomia del branquiosaure"></li>
+          
             
-            <li>A la saga de Jurassic Park no surt cap dinosaure real, això és degut a que <strong>no hi han dinosaures actors</strong>.</li>
-            <img class="fotos_curiositats" src="imatges/curiositats/curiositat4.jpg" alt="Imatge humorística sobre la falta de dinosaures reals a Jurassic Park" aria-label="Imatge relacionada amb fets sobre Jurassic Park">
+            <li>El broncasaure <strong>SI</strong> buscaba bronca contínuament.<br> <img class="fotos_curiositats" src="imatges/curiositats/curiositat3.png" alt="Imatge fent broma sobre el broncasaure buscant problemes" aria-label="Imatge sobre el comportament del broncasaure">
+            </li>
             
-            <li>Els taurons i cocodrils són <strong>tant antics</strong> (o més) que els dinosaures, però no tenen tantes películes. Una mica injust no?</li>
-            <img class="fotos_curiositats" src="imatges/curiositats/curiositat5.jpg" alt="Imatge que compara l'antiguitat dels taurons i cocodrils amb la dels dinosaures" aria-label="Imatge sobre animals antics com els taurons i cocodrils">
+            <li>A la saga de Jurassic Park no surt cap dinosaure real, això és degut a que <strong>no hi han dinosaures actors</strong>. <br> <img class="fotos_curiositats" src="imatges/curiositats/curiositat4.jpg" alt="Imatge humorística sobre la falta de dinosaures reals a Jurassic Park" aria-label="Imatge relacionada amb fets sobre Jurassic Park">
+            </li>
+           
+            <li>Els taurons i cocodrils són <strong>tant antics</strong> (o més) que els dinosaures, però no tenen tantes películes. Una mica injust no?<br><img class="fotos_curiositats" src="imatges/curiositats/curiositat5.jpg" alt="Imatge que compara l'antiguitat dels taurons i cocodrils amb la dels dinosaures" aria-label="Imatge sobre animals antics com els taurons i cocodrils">
+            </li>
             
-            <li>Animals com el mosasaure, el plesiosaure o l'ictiosaure, al igual que molts altres criatures marines prehistòriques, <storng>no eren dinosaures</storng>, sinó rèptils marins.</li>
-            <img class="fotos_curiositats" src="imatges/curiositats/curiositat6.jpg" alt="Imatge de rèptils marins que no són dinosaures" aria-label="Imatge de rèptils marins com el mosasaure i el plesiosaure">
+            <li>Animals com el mosasaure, el plesiosaure o l'ictiosaure, al igual que molts altres criatures marines prehistòriques, <strong>no eren dinosaures</strong>, sinó rèptils marins. <br><img class="fotos_curiositats" src="imatges/curiositats/curiositat6.jpg" alt="Imatge de rèptils marins que no són dinosaures" aria-label="Imatge de rèptils marins com el mosasaure i el plesiosaure">
+            </li>
+           
+            <li>El mateix es pot dir dels rèptils voladors com el pteranodon o el dinomorphodon, <strong>no eren dinosaures</strong>.<br><img class="fotos_curiositats" src="imatges/curiositats/curiositat7.jpg" alt="Imatge de rèptils voladors que no són dinosaures" aria-label="Imatge de rèptils voladors com el pteranodon">
+            </li>
             
-            <li>El mateix es pot dir dels rèptils voladors com el pteranodon o el dinomorphodon, <strong>no eren dinosaures</strong>.</li>
-            <img class="fotos_curiositats" src="imatges/curiositats/curiositat7.jpg" alt="Imatge de rèptils voladors que no són dinosaures" aria-label="Imatge de rèptils voladors com el pteranodon">
+            <li>Els dinosaures <strong>no es van extingir</strong>, no et creguis el que digui el govern.<br><img class="fotos_curiositats" src="imatges/curiositats/curiositat8.jpg" alt="Imatge humorística suggerint que els dinosaures mai es van extingir" aria-label="Imatge sobre la teoria de l'extinció dels dinosaures">
+            </li>
             
-            <li>Els dinosaures <strong>no es van extingir</strong>, no et creguis el que digui el govern.</li>
-            <img class="fotos_curiositats" src="imatges/curiositats/curiositat8.jpg" alt="Imatge humorística suggerint que els dinosaures mai es van extingir" aria-label="Imatge sobre la teoria de l'extinció dels dinosaures">
+            <li>Els dinosaures <strong>no saben programar en HTML</strong> i qui ha escrit això tampoc.<br><img class="fotos_curiositats" src="imatges/curiositats/curiositat9.jpg" alt="Imatge suggerint que els dinosaures no poden programar en HTML" aria-label="Imatge sobre les habilitats de programació dels dinosaures">
+            </li>
             
-            <li>Els dinosaures <strong>no saben programar en HTML</strong> i qui ha escrit això tampoc.</li>
-            <img class="fotos_curiositats" src="imatges/curiositats/curiositat9.jpg" alt="Imatge suggerint que els dinosaures no poden programar en HTML" aria-label="Imatge sobre les habilitats de programació dels dinosaures">
+            <li>L'anterior curiositat és falsa, els dinosaures <strong>sí</strong> que saben programar en HTML.<br><img class="fotos_curiositats" src="imatges/curiositats/curiositat10.jpg" alt="Imatge que afirma humorísticament que els dinosaures saben HTML" aria-label="Imatge en suport de les habilitats de programació dels dinosaures">
+            </li>
             
-            <li>L'anterior curiositat és falsa, els dinosaures <strong>sí</strong> que saben programar en HTML.</li>
-            <img class="fotos_curiositats" src="imatges/curiositats/curiositat10.jpg" alt="Imatge que afirma humorísticament que els dinosaures saben HTML" aria-label="Imatge en suport de les habilitats de programació dels dinosaures">
+            <li>Investigacions més recents demostren que els dinosaures <strong>tenien plomes</strong>, o una versió primitiva d'aquestes.<br><img class="fotos_curiositats" src="imatges/curiositats/curiositat11.jpg" alt="Imatge que mostra dinosaures amb plomes primitives" aria-label="Imatge sobre les plomes dels dinosaures">
+            </li>
             
-            <li>Investigacions més recents demostren que els dinosaures <strong>tenien plomes</strong>, o una versió primitiva d'aquestes.</li>
-            <img class="fotos_curiositats" src="imatges/curiositats/curiositat11.jpg" alt="Imatge que mostra dinosaures amb plomes primitives" aria-label="Imatge sobre les plomes dels dinosaures">
+            <li>Els nostres dinosaures preferits són <strong>l'espinosaure</strong> i les <strong>galetes dinosaurus</strong>.<br><img class="fotos_curiositats" src="imatges/curiositats/curiositat12.jpg" alt="Imatge d'un espinosaure i galetes amb forma de dinosaure" aria-label="Imatge de l'espinosaure i galetes de dinosaure">
+            </li>
             
-            <li>Els nostres dinosaures preferits són <strong>l'espinosaure</strong> i les <strong>galetes dinosaurus</strong>.</li>
-            <img class="fotos_curiositats" src="imatges/curiositats/curiositat12.jpg" alt="Imatge d'un espinosaure i galetes amb forma de dinosaure" aria-label="Imatge de l'espinosaure i galetes de dinosaure">
-            
-            <li>Les galetes dinosaurus <strong>no</strong> saben a dinosaure.</li>
-            <img class="fotos_curiositats" src="imatges/curiositats/curiositat13.jpg" alt="Imatge que afirma que les galetes de dinosaure no tenen gust de dinosaure" aria-label="Imatge sobre les galetes de dinosaure">
+            <li>Les galetes dinosaurus <strong>no</strong> saben a dinosaure.<br><img class="fotos_curiositats" src="imatges/curiositats/curiositat13.jpg" alt="Imatge que afirma que les galetes de dinosaure no tenen gust de dinosaure" aria-label="Imatge sobre les galetes de dinosaure">
+            </li>
             
             <li>Però les Oreos <strong>sí</strong>.</li>
             
-            <li>Els dodos es van <strong>extingir per tontos</strong>.</li>
-            <img class="fotos_curiositats" src="imatges/curiositats/curiositat15.webp" alt="Imatge humorística que explica l'extinció dels dodos" aria-label="Imatge sobre el motiu de l'extinció dels dodos">
-          </ol>
+            <li>Els dodos es van <strong>extingir per tontos</strong>.<img class="fotos_curiositats" src="imatges/curiositats/curiositat15.webp" alt="Imatge humorística que explica l'extinció dels dodos" aria-label="Imatge sobre el motiu de l'extinció dels dodos">
+       </li>
+               </ol>
         </section>
         
 <hr>
@@ -372,7 +370,7 @@
       
           <h3 id="sectionDiplodocus" aria-label="Pas 4: Seguir el manual">4. El Llom del Diplodocus</h3>
           <p>Com tots sabem, els inventors originals dels dinosaures son els membres del grup musical català "El Pony Pisador", a la seva cançó "El Llom del Diplodocus" actua com a biblia màxima i qualsevol cosa que no apareixi a aquest video no es un dinosaure.</p>
-          <iframe width="100%" height="200px" src="https://www.youtube.com/embed/a58qZNQGeTI?si=q_UC1QlDcp-rsAHK" title="YouTube video del Pony Pisador sobre el Llom del Diplodocus" frameborder="0" aria-label="Video explicatiu sobre la identificació de dinosaures, creat pel grup El Pony Pisador" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="100%" height="200px" src="https://www.youtube.com/embed/a58qZNQGeTI?si=q_UC1QlDcp-rsAHK" title="YouTube video del Pony Pisador sobre el Llom del Diplodocus" aria-label="Video explicatiu sobre la identificació de dinosaures, creat pel grup El Pony Pisador" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </aside>
       
     </div>
