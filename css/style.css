@@ -32,6 +32,20 @@ p {
     font-size: 1.2em;
 }
 
+/* Make the navbar sticky at the top */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99; /* Ensures the navbar stays above other content */
+}
+
+/* Offset content below the navbar */
+body {
+    padding-top: 6em; /* Adjust this to match the navbar height */
+}
+
+
 /*------------------------------
     Titulars i Encapçalaments
 ------------------------------*/
@@ -127,18 +141,29 @@ img.lego {
     font-size: 2rem;
 }
 
+#manbutn:hover{
+    background-color: #34931e;
+    color:#ffd000;
+}
+
+
 aside {
     right: 0px;
+   
 }
 
 aside .show {
     width: 250px;
 }
 
-@media (max-width: 992px) { /* Targeta pantalles més petites que lg */
+@media (max-width: 992px) {
     aside {
-        top: 0px;
-        position: absolute;
+        top:0px;
+        max-height: 100vh; /* Use 80% of the viewport height */
+        overflow-y: auto; /* Adds vertical scrolling */
+        position: fixed; /* Keeps the element within the normal document flow */
+   
+        z-index: 999;
     }
 }
 
@@ -168,8 +193,11 @@ aside h2 {
     height: 100%;
 }
 
-#articlespace article h4 {
+#articlespace article h3{
     font-weight: bold;
+}
+
+#articlespace article a{
 }
 
 /*------------------------------
